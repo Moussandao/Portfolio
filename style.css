@@ -1,0 +1,250 @@
+
+/******Les valeurs initiales de ma page****/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/******Partie 1: Styliser l'en-tete de ma page web****/
+/******Mettre tous les elements du header en mode flex*******/
+.header>.header_container{
+    display: flex;
+    justify-content: space-between;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    border-bottom: solid 1px #000000;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    z-index: 1;
+}
+/******Mettre les elements du navbar en mode flex aussi***/
+.header_container>.navbar>ul{
+    display: flex;
+}
+.navbar>ul>li{
+   list-style-type: none;
+   padding: 20px 35px ;
+   margin: 10px;
+}
+.navbar ul li,a{
+    text-decoration: none;
+    color: #000;
+}
+.navbar ul li,a:hover{
+     color: #0000ff;
+}
+/*******le style du h1****/
+.header_container .logo{
+    padding: 20px 10px 20px 20px;
+}
+/****La partie reseaux sociaux*****/
+.header_container>.socialmedia{
+    display: flex;
+}
+.socialmedia>.socialmedia_items{
+    display: flex;
+}
+.socialmedia_items>li{
+    padding: 30px 20px;
+    list-style-type: none;
+}
+.socialmedia_items>li,a{
+    text-decoration: none;
+}
+/*******Pour cacher le menu burger car j'en ai pas besoin pour le format ordinateur*****/
+.socialmedia>.burger{
+    visibility: hidden;
+}
+/******Partie 2: Styliser le corps de ma page web*****/
+/********Section Acceuille*****/
+.acceuil{
+    width: 100%;
+    height: auto;
+    background-color: #0000ff;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.part2{
+    padding: 30px 0px 30px 100px;
+}
+.part2>img{
+    border-radius: 50%;
+    border:solid 1px #000;
+}
+.part1{
+    padding-right:400px ;
+}
+.part1>.big_title{
+   font-weight: 500;
+   font-size: 1.9em;
+}
+.part1>h3{
+    padding-left: 80px;
+}
+/******Section About*****/
+.about{
+    width: 100%;
+    height: auto;
+}
+.about>.container{
+    display: flex;
+    justify-content: space-between;
+}
+.about_item>.section_title{
+    text-align: center;
+    padding: 20px ;
+    text-decoration: underline;
+}
+.about_item>h3{
+    padding-left: 20px;
+}
+.about_item>p{
+    padding: 10px 40px;
+    width: 1000px;
+}
+.item_video{
+    padding: 30px 100px ;
+}
+.video{
+    border: solid 3px blue;
+}
+/****Section Work*****/
+.work{
+    width: 100%;
+    height: auto;
+}
+.work>.container{
+    display:inline-block;
+    justify-content: space-between;
+}
+.work_item>.section_title{
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: underline;
+}
+.work_item>p{
+    width: 1000px;
+    padding: 10px 40px;
+}
+.finPart>.project{
+   display: inline-block;
+}
+.project>.bloc_1,
+   .bloc_2{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 300px;
+    gap: 100px;
+}
+.cv{
+    width: 100%;
+    height: auto;
+    background-color: #0202ff;
+}
+.cv>.container{
+    display: inline-block;
+
+}
+.container>.cv_title{
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: underline;
+}
+.blocs{
+    display: inline-block;
+    padding-bottom: 50px;
+}
+.blocs>.bloc_A{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+.bloc_A ul{
+    padding-top: 20px;
+}
+.items_title{
+    text-decoration: underline;
+}
+.blocs>.bloc_B{
+    padding: 10px 50px;
+}
+.bloc_B>p{
+ padding-top: 20px;
+}
+/********Section Contact********/
+.contact{
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+}
+.contact_title{
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: underline;
+}
+.contact .bienvenue{
+    text-align: center;
+}
+.form_title{
+    text-align: center;
+    padding: 10px 30px;
+    font-size: 1.6em;
+    font-weight: 400;
+}
+.formulaire{
+    width: 600px;
+    height: 405px;
+    margin: 20px 450px;
+    border: solid 1px #000;
+}
+.formulaire>fieldset{
+    height: 70px;
+    background-color: blue;
+    max-width: 600px;
+}
+.formulaire input{
+    width: 300px;
+    padding: 10px 15px;
+    margin: 10px 30px;
+}
+.formulaire label{
+    padding: 10px;
+}
+.button{
+    width: 150px;
+    height: 40px;
+    margin: 10px 200px;
+}
+.button:hover{
+    background-color: #fff;
+    border: solid 5px #000;
+}
+.submit{
+    font-size: 1.3em;
+    font-weight: 400;
+}
+/***********La partie footer*********/
+footer{
+    height: 200px;
+    background-color: grey;
+}
+footer>.reseaux_sociaux{
+    display: flex;
+    padding: 40px 700px;
+}
+footer ul,li{
+    list-style-type: none;
+    padding: 15px;
+    padding-bottom: 0;
+}
+footer>.adresse{
+    text-align: center;
+   
+}
